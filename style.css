@@ -1,4 +1,33 @@
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 body  {
     margin: auto;
     width: 1600px;
+}
+.head {
+    margin-right: auto;
+    height: 900px;
+    background-image: url(./assets/headbackground.png);
+    background-repeat: no-repeat;
+    background-position: center -12.7vh;
+    background-size: 100%;
+}
+.head header {
+    display: flex;
+    padding: 2.3vh 2vh 0 10.3vh;
+}
+.logo {
+    display: flex;
+}
+.logo-img {
+    height: 100%;
+}
+.logo-text {
+    margin: 0;
 }
