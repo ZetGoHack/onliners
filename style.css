@@ -1,6 +1,22 @@
+@font-face {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Helvetica'), url('./assets/fonts/Helvetica.woff') format('woff');
+}
+.helvetica {
+    font-family:'Helvetica';
+    font-weight:normal;
+}
+
 .poppins-bold {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
+  font-style: normal;
+}
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
   font-style: normal;
 }
 body  {
@@ -10,16 +26,18 @@ body  {
     margin-right: auto;
     width: 1600px;
     height: 900px;
-    background-image: url(https://x0.at/TBiS.png);
+    background-image: url(./assets/headbackground.png);
     background-repeat: no-repeat;
     background-position: center -12.7vh;
     background-size: 100%;
 }
 .head header {
     display: flex;
-    padding: 2.3vh 10.3vh;
+    flex-wrap: nowrap;
+    padding: 2.3vh 0 0 10.3vh;
     height: 3.2vh;
 }
+
 .logo {
     display: flex;
 }
@@ -27,10 +45,133 @@ body  {
     height: 100%;
 }
 .logo-text {
-    font-size: 25px;
+    font-size: 24.7px;
     margin: 0;
-    padding: 1vh 0 0 0;
+    padding: 0.4vh 0 0 1.7vh;
 }
-.head-buttons > *{
-    border: 0;
+.head-buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0.6vh 0vh 0vh 10.35vh;
+}
+
+.head-buttons .head-button:nth-child(2) {
+    margin-left: 2.86vh;
+}
+
+.head-buttons .head-button:nth-child(3) {
+    margin-left: 3.18vh;
+}
+
+.head-buttons .head-button:nth-child(4) {
+    margin-left: 3.2vh;
+}
+
+.head-buttons .head-button:nth-child(5) {
+    margin-left: 3.2vh;
+}
+
+.head-button {
+    position: relative;
+    border: 0px solid #ffb607;
+    background: unset;
+    font-size: 17px;
+    transition: 0.2s linear;
+}
+.head-button:hover {
+    color: #ffb607;
+}
+.page::after {
+    content: '';
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-80%);
+    width: 12px;
+    height: 0px;
+    background-color: rgb(255, 197, 125);
+    border-radius: 30%;
+    transition: 0.5s ease;
+}
+.page:hover::after {
+    height: 6px;
+}
+
+.on-page::after {
+    height: 6px;
+}
+
+.head-last-section {
+    padding: 0.9vh 0vh 0 4.9vh;
+}
+
+.head-last-section * {
+    display: inline-block;
+    margin: 0;
+}
+.head-callus {
+    font-size: 17px;
+    color: #ffb607;
+}
+.head-callus:nth-child(2) {
+    margin-left: -0.1vh;
+}
+.head-callus:nth-child(3) {
+    margin-left: -0.05vh;
+}
+.head-callus:nth-child(4) {
+    margin-left: -0.16vh;
+}
+
+.head-last-section .head-button:nth-child(2) {
+    margin-left: 3.2vh;
+}
+.head-last-section .head-button:nth-child(3) {
+    margin-left: 2.5vh;
+}
+
+.head-name {
+    width: fit-content;
+    height: 8vh;
+    font-size: 90px;
+    letter-spacing: -1.3px;
+    margin: auto;
+    margin-top: 5.5vh;
+}
+.head-name * {
+    margin: 0;
+}
+
+.head-p {
+    width: 50.7vh;
+    font-size: 16px;
+    letter-spacing: -0.05px;
+    text-align: center;
+    line-height: 1.81vh;
+    margin: auto;
+    margin-top: 1.7vh;
+}
+.head-p p {
+    margin-bottom: 0;
+}
+
+.head-p p:nth-child(2) {
+    margin-top: -0.05vh;
+}
+
+.head-nav-btns {
+    margin-top: 7.5vh;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.head-nav-btns div:nth-child(1) {
+    width: 8vh;
+    height: 8vh;
+    transform: translateX(-50%);
+    text-align: end;
+    padding: 0 0 0 0;
+    background-color: #242424;
+    border-radius: 100%;
 }
