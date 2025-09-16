@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+}
+
 @font-face {
     font-family: 'Helvetica';
     font-style: normal;
@@ -19,8 +23,12 @@
   font-weight: 400;
   font-style: normal;
 }
-body  {
-    margin: auto;
+
+body {
+    margin-right: auto;
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  width: 1600px;
 }
 .head {
     margin-right: auto;
@@ -211,4 +219,318 @@ body  {
     margin-top: 1.1rem;
     margin-left: 0.3rem;
     word-spacing: -3px;
+}
+
+
+
+.about-section {
+  background: rgba(255,182,7,255);
+  padding: 5rem 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.content {
+  color: white;
+}
+
+.content h2 {
+  font-size: 3rem;
+  font-weight: normal;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+}
+
+.content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+  opacity: 1;
+}
+
+.read-more-btn {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.read-more-btn {
+  border-radius: 8px;
+}
+
+.read-more-btn:hover {
+  background-color: #000000;
+  transform: translateY(-2px);
+  transform: scale(1.05);
+  color: #fff;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cradle-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.furniture-section {
+  background-color: #f8f9fa;
+  padding: 5rem 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.furniture-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+.section-header p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.furniture-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.furniture-item {
+  text-align: left;
+}
+
+.furniture-image {
+  margin-bottom: 2rem;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+.furniture-image img {
+  scale: 1.05;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.furniture-image:hover img {
+  transform: scale(1.05);
+}
+
+.furniture-item h3 {
+  color: #ffbb00;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.furniture-item p {
+  color: #000000;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.search-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffae18cb;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  z-index: 2;
+  text-decoration: none;
+  color: inherit;
+}
+
+.furniture-image:hover .search-circle {
+  opacity: 0.9;
+  pointer-events: auto;
+  transition: opacity 0.3s;
+}
+
+.search-circle .material-symbols-outlined {
+  font-size: 33px;
+  color: #ffffff;
+}
+
+.search-circle:hover {
+  /*  */
+  
+}
+
+.who-we-are-section {
+  background: linear-gradient(rgba(255, 187, 0, 0.88), rgba(255, 187, 0, 0.86)),
+    url("https://img.freepik.com/premium-photo/modern-dark-kitchen-interior-with-furniture-kitchenware-grey-black-dark-kitchen-interior-background-luxury-kitchen-generative-ai_208753-1498.jpg?w=740");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 3rem 2rem;
+  display: flex;
+  align-items: center;
+  height: 400px;
+}
+
+.who-we-are-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+
+.who-we-are-container h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  margin-top: 16px;
+}
+
+.who-we-are-container .subtitle {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+.who-we-are-container p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 400; /* Add this line for slightly lighter font */
+}
+
+.get-quote-btn {
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  border-radius: 6px;
+}
+
+.get-quote-btn:hover {
+  background-color: #000000;
+  transform: translateY(-2px);
+  transform: scale(1.05);
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .content h2 {
+    font-size: 2.5rem;
+  }
+
+  .about-section {
+    padding: 1rem;
+  }
+
+  .furniture-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+
+  .furniture-item {
+    text-align: center;
+  }
+
+  .who-we-are-container h2 {
+    font-size: 2rem;
+  }
+
+  .who-we-are-section {
+    padding: 2rem 1rem;
+  }
+
+  .who-we-are-section h2 {
+    margin-bottom: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content h2 {
+    font-size: 2rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+
+  .furniture-item h3 {
+    font-size: 1.2rem;
+  }
+
+  .who-we-are-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .who-we-are-container p {
+    font-size: 0.9rem;
+  }
 }
