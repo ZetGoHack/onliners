@@ -28,14 +28,14 @@ body  {
     height: 900px;
     background-image: url(./assets/headbackground.png);
     background-repeat: no-repeat;
-    background-position: center -12.7vh;
+    background-position: center -10.3505rem;
     background-size: 100%;
 }
 .head header {
     display: flex;
     flex-wrap: nowrap;
-    padding: 2.3vh 0 0 10.3vh;
-    height: 3.2vh;
+    padding: 1.8745rem 0 0 8.3945rem;
+    height: 2.608rem;
 }
 
 .logo {
@@ -47,38 +47,38 @@ body  {
 .logo-text {
     font-size: 24.7px;
     margin: 0;
-    padding: 0.4vh 0 0 1.7vh;
+    padding: 0.326rem 0 0 1.3855rem;
 }
-.head-buttons {
+.head-navs {
     display: flex;
     flex-wrap: nowrap;
-    padding: 0.6vh 0vh 0vh 10.35vh;
+    padding: 0.489rem 0rem 0rem 8.43525rem;
 }
 
-.head-buttons .head-button:nth-child(2) {
-    margin-left: 2.86vh;
+.head-navs .head-nav:nth-child(2) {
+    margin-left: 2.331rem;
 }
 
-.head-buttons .head-button:nth-child(3) {
-    margin-left: 3.18vh;
+.head-navs .head-nav:nth-child(3) {
+    margin-left: 2.5927rem;
 }
 
-.head-buttons .head-button:nth-child(4) {
-    margin-left: 3.2vh;
+.head-navs .head-nav:nth-child(4) {
+    margin-left: 2.608rem;
 }
 
-.head-buttons .head-button:nth-child(5) {
-    margin-left: 3.2vh;
+.head-navs .head-nav:nth-child(5) {
+    margin-left: 2.608rem;
 }
 
-.head-button {
+.head-nav {
     position: relative;
     border: 0px solid #ffb607;
     background: unset;
     font-size: 17px;
     transition: 0.2s linear;
 }
-.head-button:hover {
+.head-nav:hover {
     color: #ffb607;
 }
 .page::after {
@@ -102,7 +102,7 @@ body  {
 }
 
 .head-last-section {
-    padding: 0.9vh 0vh 0 4.9vh;
+    padding: 0.7335rem 0rem 0 3.9935rem;
 }
 
 .head-last-section * {
@@ -114,64 +114,101 @@ body  {
     color: #ffb607;
 }
 .head-callus:nth-child(2) {
-    margin-left: -0.1vh;
+    margin-left: -0.0815rem;
 }
 .head-callus:nth-child(3) {
-    margin-left: -0.05vh;
+    margin-left: -0.04075rem;
 }
 .head-callus:nth-child(4) {
-    margin-left: -0.16vh;
+    margin-left: -0.1304rem;
 }
 
-.head-last-section .head-button:nth-child(2) {
-    margin-left: 3.2vh;
+.head-last-section .head-nav:nth-child(2) {
+    margin-left: 2.608rem;
 }
-.head-last-section .head-button:nth-child(3) {
-    margin-left: 2.5vh;
+.head-last-section .head-nav:nth-child(3) {
+    margin-left: 2.0375rem;
 }
 
 .head-name {
     width: fit-content;
-    height: 8vh;
+    height: 6.52rem;
     font-size: 90px;
     letter-spacing: -1.3px;
     margin: auto;
-    margin-top: 5.5vh;
+    margin-top: 4.4825rem;
 }
 .head-name * {
     margin: 0;
 }
 
 .head-p {
-    width: 50.7vh;
+    width: 41.7405rem;
     font-size: 16px;
     letter-spacing: -0.05px;
     text-align: center;
-    line-height: 1.81vh;
+    line-height: 1.47615rem;
     margin: auto;
-    margin-top: 1.7vh;
+    margin-top: 1.3855rem;
 }
 .head-p p {
     margin-bottom: 0;
 }
 
 .head-p p:nth-child(2) {
-    margin-top: -0.05vh;
+    margin-top: -0.04075rem;
 }
 
 .head-nav-btns {
-    margin-top: 7.5vh;
+    margin-top: 5.9495rem;
     width: 100%;
     color: white;
     display: flex;
     justify-content: space-between;
 }
-.head-nav-btns div:nth-child(1) {
-    width: 8vh;
-    height: 8vh;
-    transform: translateX(-50%);
+.head-nav-btns div {
+    width: 6.4385rem;
+    height: 6.4385rem;
     text-align: end;
-    padding: 0 0 0 0;
     background-color: #242424;
     border-radius: 100%;
+}
+.head-nav-btns div:nth-child(1) {
+    transform: translateX(-52%);
+    clip-path: inset(0 0 0 52%);
+}
+.head-nav-btns div:nth-child(2) {
+    transform: translateX(52%);
+    clip-path: inset(0 52% 0 0);
+}
+.head-nav-btns > *::before{
+    display: inline-block;
+    font-size: 28.9px;
+}
+.icofont-long-arrow-left::before {
+    margin: 2.35rem 1rem 0 0;
+}
+.icofont-long-arrow-right::before {
+    margin: 2.45rem 3.9rem 0 0;
+}
+.head-button {
+    width: 100%;
+}
+.head-button > * {
+    display: block;
+    width: 11.3rem;
+    height: 3.2rem;
+    margin: auto;
+    margin-top: 17.4rem;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    background-color: #ffb607;
+    border: none;
+    border-radius: 5%;
+}
+.head-button > * > * {
+    margin-top: 1.1rem;
+    margin-left: 0.3rem;
+    word-spacing: -3px;
 }
