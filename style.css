@@ -35,6 +35,14 @@ html {
     font-variation-settings:
       "wdth" 100;
 }
+.open-sans-bold {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
 
 body {
     margin-right: auto;
@@ -648,4 +656,107 @@ body {
   .who-we-are-container p {
     font-size: 0.9rem;
   }
+}
+
+
+.sixth {
+  height: 550px;
+  text-align: center;
+  padding: 6.6rem 3.15rem 0;
+}
+.sixth > :nth-child(1) {
+  font-size: 35px;
+}
+.sixth > :nth-child(2) {
+  font-size: 17px;
+}
+.gallery {
+  height: 23.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+}
+.gallery-pointer {
+  width: 3.3rem;
+  height: 3.3rem;
+  background-color: black;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+.gallery-pointer-left{
+  background-image: url(./assets/right-arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.gallery-pointer-right{
+  background-image: url(./assets/left-arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.gallery-pointer:hover {
+  filter: invert(1);
+  outline: 2px solid white;
+}
+.gallery-pointer:active {
+  transform: scale(0.95);
+  background-color: rgb(33, 33, 33);
+  outline: unset;
+}
+
+.gallery-block {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 73rem;
+  color: white;
+}
+.gallery-element {
+  width: 32.1%;
+  position: relative;
+  background-position: center;
+}
+.gallery-block > :nth-child(1) {
+  background-image: url(./assets/becca.png);
+}
+.gallery-block > :nth-child(2) {
+  background-image: url(./assets/hall.png);
+}
+.gallery-block > :nth-child(3) {
+  background-image: url(./assets/staircase.png);
+}
+.gallery-element > p {
+  position: absolute;
+  font-size: 20px;
+  bottom: 2.6rem;
+  left: 17%;
+  transition: 0.1s linear;
+}
+.yellow-block {
+  width: 22rem;
+  height: 20.6rem;
+  opacity: 0;
+  border-radius: 4%;
+  background-color: rgba(255, 181, 7, 0.8);
+  transform: translate(3%, 7%);
+  transition: 0.1s linear;
+}
+.yellow-block-text {
+  display: inline-block;
+  margin-top: 7.6rem;
+  width: 10.3rem;
+  height: 2rem;
+  padding-top: 1.3rem;
+  font-size: 12px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  transition: 0.3s linear;
+}
+.gallery-element:hover .yellow-block{
+  opacity: 1;
+}
+.yellow-block-text:hover {
+  background-color: white;
+  color: black;
 }
