@@ -1,6 +1,9 @@
 * {
     margin: 0;
 }
+html {
+  /* font-size: clamp(16px, 2vw, 32px); */
+}
 
 @font-face {
     font-family: 'Helvetica';
@@ -275,9 +278,6 @@ body {
     height: 100%;
     text-align: center;
 }
-/* .second > .service-blocks > * > img {
-    margin: auto;
-} */
 .second > .service-blocks > * > p:nth-of-type(1) {
     margin-top: 0.7rem;
     font-size: 20px;
@@ -335,17 +335,19 @@ body {
 }
 
 .about-section {
-  background: rgba(255,182,7,255);
-  padding: 5rem 2rem;
-  display: flex;
-  align-items: center;
+    height: 597px;
+    background: rgba(255, 182, 7, 255);
+    padding: 5rem 2rem 0;
+    display: flex;
+    align-items: flex-start;
 }
 
 .container {
+  height: 517px;
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.5fr;
   gap: 4rem;
   align-items: center;
 }
@@ -359,7 +361,7 @@ body {
     margin-left: 1.1rem;
     font-weight: normal;
     margin-bottom: 2rem;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
 }
 
 .content p {
@@ -405,6 +407,7 @@ body {
 }
 
 .furniture-section {
+  height: 720px;
   background-color: #f8f9fa;
   padding: 5rem 2rem;
   display: flex;
@@ -526,7 +529,7 @@ body {
   padding: 3rem 2rem;
   display: flex;
   align-items: center;
-  height: 400px;
+  height: 295px;
 }
 
 .who-we-are-container {
@@ -560,7 +563,7 @@ body {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  font-weight: 400; /* Add this line for slightly lighter font */
+  font-weight: 400;
 }
 
 .get-quote-btn {
