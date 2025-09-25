@@ -300,7 +300,7 @@ body {
     font-size: 17px;
     line-height: 1.6rem;
 }
-.second > .service-blocks > * > button {
+.second > .service-blocks > * button {
     width: 6rem;
     height: 1.9rem;
     border: none;
@@ -311,7 +311,7 @@ body {
     font-size: 12px;
     transition: 0.3s linear;
 }
-.second > .service-blocks > * > button:hover {
+.second > .service-blocks > * button:hover {
     background-color: #000000;
 }
 .second > .service-blocks > :nth-child(1) > img {
