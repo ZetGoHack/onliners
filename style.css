@@ -82,23 +82,24 @@ body {
     padding: 0.489rem 0rem 0rem 8.43525rem;
 }
 
-.head-navs .head-nav:nth-child(2) {
+.head-navs > a:nth-child(2)  {
     margin-left: 2.331rem;
 }
 
-.head-navs .head-nav:nth-child(3) {
+.head-navs > a:nth-child(3)  {
     margin-left: 2.5927rem;
 }
 
-.head-navs .head-nav:nth-child(4) {
+.head-navs > a:nth-child(4)  {
     margin-left: 2.608rem;
 }
 
-.head-navs .head-nav:nth-child(5) {
+.head-navs > a:nth-child(5)  {
     margin-left: 2.608rem;
 }
 
 .head-nav {
+    height: 100%;
     position: relative;
     border: 0px solid #ffb607;
     background: unset;
@@ -234,6 +235,8 @@ body {
 }
 .head-button {
     width: 100%;
+    display: block;
+    text-decoration: unset;
 }
 .head-button > * {
     display: block;
