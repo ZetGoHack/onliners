@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Build Better</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/fonts/icofont/css/icofont.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" />
+    <style>
+        .services-hero {
+            /* Remove the static background-image here */
+            background-size: cover;
+            background-position: center;
+            padding: 15rem 2rem 15rem;
+            text-align: center;
+            color: white;
+            transition: background-image 1s ease-in-out;
+        }
+
+        .services-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+        }
+
+        .services-hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.8;
+            color:#f8f9fa;
+        }
+
+        .service-detail {
+            padding: 5rem 2rem;
+            scroll-margin-top: 80px;
+        }
+
+        .service-detail:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        .service-detail:nth-child(odd) {
+            background-color: white;
+        }
+
+        .service-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .service-detail:nth-child(even) .service-content {
+            direction: rtl;
+        }
+
+        .service-detail:nth-child(even) .service-text {
+            direction: ltr;
+        }
+
+        .service-text h2 {
+            font-size: 2.5rem;
+            color: #ffb607;
+            margin-bottom: 1.5rem;
+            letter-spacing: 1.5px;
+        }
+
+        .service-text h3 {
+            font-size: 1.3rem;
+            color: #333;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+        }
+
+        .service-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-text ul {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+
+        .service-text ul li {
+            font-size: 1.05rem;
+            color: #555;
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .service-text ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #ffb607;
+            font-weight: bold;
+        }
+
+        .service-image {
+            width: 100%;
+            height: 400px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .service-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .service-cta {
+            margin-top: 2rem;
+        }
+
+        .service-cta button {
+            background-color: #ffb607;
+            color: white;
+            padding: 1rem 2.5rem;
+            border: none;
+            font-size: 1rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            border-radius: 8px;
+        }
+
+        .service-cta button:hover {
+            background-color: #000000;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .services-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .service-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .service-detail:nth-child(even) .service-content {
+                direction: ltr;
+            }
+
+            .service-text h2 {
+                font-size: 2rem;
+            }
+
+            .service-image {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="head" style="padding-bottom: 0; background-image: none;">
+        <header>
+            <a class="logo" href="/">
+                <img class="logo" src="assets/logo.png" alt="Built Better Logo">
+                <p class="logo-text poppins-bold">BUILT&nbsp;BETTER</p>
+            </a>
+            <div class="head-navs">
+                <a href="index.html"><button class="page head-nav poppins-regular">
+                    HOME
+                </button></a>
+                <a href="services.html"><button class="on-page page head-nav poppins-regular">
+                    SERVICES
+                </button></a>
+                <a href="/about"><button class="page head-nav poppins-regular">
+                    ABOUT
+                </button></a>
+                <a href="/shop"><button class="page head-nav poppins-regular">
+                    SHOP
+                </button></a>
+                <a href="/contct"><button class="page head-nav poppins-regular">
+                    CONTCT
+                </button></a>
+            </div>
+            <div class="head-last-section">
+                <div>
+                    <p class="head-callus poppins-regular">
+                        CALL&nbsp;US:&nbsp;+01&nbsp;1234567890</p>
+                </div>
+                <button class="head-nav icofont-search-1"></button>
+                <button class="head-nav helvetica">
+                    LOGIN
+                </button>
+            </div>
+        </header>
+    </section>
+
+    <section id="services-hero-carousel" class="services-hero">
+  <div class="hero-bg hero-bg-1"></div>
+  <div class="hero-bg hero-bg-2"></div>
+  <div class="hero-content">
+    <h1 class="poppins-bold">OUR SERVICES</h1>
+    <p class="open-sans-regular">
+      We provide comprehensive furniture and interior design solutions tailored to your needs. 
+      From custom furniture pieces to complete space transformations, our expert team delivers 
+      quality craftsmanship and innovative designs.
+    </p>
+  </div>
+</section>
+			    <section id="furnitures" class="service-detail">
+        <div class="service-content">
+            <div class="service-text">
+                <h2 class="poppins-bold">CUSTOM FURNITURES</h2>
+                <p class="open-sans-regular">
+                    Transform your space with our bespoke furniture solutions. We specialize in creating 
+                    custom pieces that perfectly match your style, space requirements, and functional needs. 
+                    Each piece is crafted with precision and attention to detail.
+                </p>
+                <h3 class="poppins-regular">What We Offer:</h3>
+                <ul class="open-sans-regular">
+                    <li>Custom-designed furniture pieces tailored to your specifications</li>
+                    <li>Wide selection of premium materials and finishes</li>
+                    <li>Expert craftsmanship with years of experience</li>
+                    <li>3D visualization before production begins</li>
+                    <li>Professional installation and after-sales support</li>
+                </ul>
+                <div class="service-cta">
+                    <a href="/contct"><button class="poppins-regular">GET A QUOTE</button></a>
+                </div>
+            </div>
+            <div class="service-image">
+                <img src="https://4.bp.blogspot.com/-Z6Z2qoFvpMw/UMIaBVxZgdI/AAAAAAAAbKI/E9-ms_s9CCE/s1600/Beautiful+modern+sofa+furniture+designs.+(2).jpg" alt="Custom Furniture">
+            </div>
+        </div>
+    </section>
+
+    <section id="office" class="service-detail">
+        <div class="service-content">
+            <div class="service-text">
+                <h2 class="poppins-bold">OFFICE SOLUTIONS</h2>
+                <p class="open-sans-regular">
+                    Create a productive and inspiring workspace with our comprehensive office furniture 
+                    and design services. We understand that a well-designed office enhances productivity, 
+                    employee satisfaction, and reflects your company's professional image.
+                </p>
+                <h3 class="poppins-regular">Our Office Services Include:</h3>
+                <ul class="open-sans-regular">
+                    <li>Ergonomic workstation design and furniture</li>
+                    <li>Conference room and meeting space solutions</li>
+                    <li>Reception area design and furnishing</li>
+                    <li>Storage and filing system optimization</li>
+                    <li>Collaborative workspace creation</li>
+                    <li>Acoustic solutions for open offices</li>
+                </ul>
+                <div class="service-cta">
+                    <a href="/contct"><button class="poppins-regular">REQUEST CONSULTATION</button></a>
+                </div>
+            </div>
+            <div class="service-image">
+                <img src="https://image.made-in-china.com/2f0j00AhzGJmsIMBqR/Luxury-Office-Computer-Desks-Office-Furniture-Executive-Office-Tables.jpg" alt="Office Solutions">
+            </div>
+        </div>
+    </section>
+
+    <section id="home" class="service-detail">
+        <div class="service-content">
+            <div class="service-text">
+                <h2 class="poppins-bold">HOME INTERIORS</h2>
+                <p class="open-sans-regular">
+                    Make your house a home with our complete interior design and furnishing services. 
+                    From living rooms to kitchens, we create spaces that reflect your personality while 
+                    maximizing comfort and functionality. Our designs blend aesthetics with practicality.
+                </p>
+                <h3 class="poppins-regular">Home Design Services:</h3>
+                <ul class="open-sans-regular">
+                    <li>Complete home interior design consultation</li>
+                    <li>Living room and dining area furnishing</li>
+                    <li>Kitchen design and cabinetry solutions</li>
+                    <li>Custom storage solutions throughout the home</li>
+                    <li>Color schemes and material selection guidance</li>
+                    <li>Lighting design and fixture selection</li>
+                </ul>
+                <div class="service-cta">
+                    <a href="/contct"><button class="poppins-regular">START YOUR PROJECT</button></a>
+                </div>
+            </div>
+            <div class="service-image">
+                <img src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?cs=srgb&dl=pexels-vecislavas-popa-1643383.jpg&fm=jpg" alt="Home Interiors">
+            </div>
+        </div>
+    </section>
+
+    <section id="badroom" class="service-detail">
+        <div class="service-content">
+            <div class="service-text">
+                <h2 class="poppins-bold">BEDROOM DESIGN</h2>
+                <p class="open-sans-regular">
+                    Create your perfect sanctuary with our specialized bedroom design services. We focus 
+                    on creating peaceful, functional spaces that promote rest and relaxation. From master 
+                    suites to children's rooms, we design bedrooms that meet your specific needs.
+                </p>
+                <h3 class="poppins-regular">Bedroom Services Include:</h3>
+                <ul class="open-sans-regular">
+                    <li>Custom bed frames and headboard designs</li>
+                    <li>Built-in wardrobe and closet systems</li>
+                    <li>Bedside furniture and storage solutions</li>
+                    <li>Children's bedroom design and furniture</li>
+                    <li>Master suite complete makeovers</li>
+                    <li>Space optimization for small bedrooms</li>
+                </ul>
+                <div class="service-cta">
+                    <a href="/contct"><button class="poppins-regular">DESIGN MY BEDROOM</button></a>
+                </div>
+            </div>
+            <div class="service-image">
+                <img src="https://cdn.pixabay.com/photo/2018/04/05/16/38/furniture-3293321_1280.jpg" alt="Bedroom Design">
+            </div>
+        </div>
+    </section>
+
+    <section class="who-we-are-section">
+        <div class="who-we-are-container">
+            <h2>READY TO GET STARTED?</h2>
+            <div class="subtitle">LET'S CREATE SOMETHING AMAZING TOGETHER</div>
+            <p>
+                Contact us today for a free consultation. Our team of experienced designers and craftsmen 
+                are ready to bring your vision to life. Whether it's a single piece of furniture or a 
+                complete space transformation, we're here to help.
+            </p>
+            <a href="/contct"><button class="get-quote-btn">CONTACT US NOW</button></a>
+        </div>
+    </section>
+    <script>
+        // Carousel background images
+        const heroImages = [
+            "https://www.ourfurniturewarehouse.com.au/cdn/shop/files/Room2_a27c059e-0373-4c95-bc8e-2bb8016eaaaa_1500x.jpg?v=1696292243",
+            "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg?cs=srgb&dl=pexels-vecislavas-popa-1643383.jpg&fm=jpg",
+            "https://cdn.pixabay.com/photo/2018/04/05/16/38/furniture-3293321_1280.jpg"
+        ];
+        const heroSection = document.getElementById('services-hero-carousel');
+        const bgDivs = [
+            heroSection.querySelector('.hero-bg-1'),
+            heroSection.querySelector('.hero-bg-2')
+        ];
+        let heroIndex = 0;
+        let active = 0;
+
+        // Set initial backgrounds
+        bgDivs[0].style.backgroundImage = `linear-gradient(#efab00a6, #545454ed), url('${heroImages[0]}')`;
+        bgDivs[0].classList.add('active');
+        bgDivs[1].style.backgroundImage = `linear-gradient(#efab00a6, #545454ed), url('${heroImages[1]}')`;
+
+        setInterval(() => {
+            const next = (active + 1) % 2;
+            heroIndex = (heroIndex + 1) % heroImages.length;
+            // Set next bg image
+            bgDivs[next].style.backgroundImage = `linear-gradient(#efab00a6, #545454ed), url('${heroImages[heroIndex]}')`;
+            // Crossfade
+            bgDivs[next].classList.add('active');
+            bgDivs[active].classList.remove('active');
+            active = next;
+        }, 3000); // Change every 4 seconds
+    </script>
+</body>
+</html>
