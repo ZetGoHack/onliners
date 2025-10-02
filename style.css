@@ -47,26 +47,25 @@ html {
 body {
     margin-right: auto;
   font-family: "Arial", sans-serif;
-  width: 1600px;
 }
 .head {
     margin-right: auto;
-    width: 1600px;
-    height: 900px;
-    border: 1px solid white;
+    padding-bottom: 3rem;
     background-image: url(./assets/headbackground.png);
     background-repeat: no-repeat;
-    background-position: center -10rem;
-    background-size: 100%;
+    background-position: center 90%;
+    background-color: #f3f3f3;
 }
 .head header {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    margin: auto;
-    margin-top: 1.9rem;
+    padding: 0 8%;
+    padding-top: 1.9rem;
+    padding-bottom: 1rem;
     height: 2.6rem;
-    width: 84%;
+    border-bottom: #000000 solid 1px;
+    background-color: #f3f3f3;
 }
 
 .logo {
@@ -86,22 +85,6 @@ body {
     display: flex;
     flex-wrap: nowrap;
     padding-top: 0.5rem;
-}
-
-.head-navs > a:nth-child(2)  {
-    margin-left: 2.331rem;
-}
-
-.head-navs > a:nth-child(3)  {
-    margin-left: 2.5927rem;
-}
-
-.head-navs > a:nth-child(4)  {
-    margin-left: 2.608rem;
-}
-
-.head-navs > a:nth-child(5)  {
-    margin-left: 2.608rem;
 }
 
 .head-nav {
@@ -136,6 +119,7 @@ body {
 }
 
 .head-last-section {
+    display: flex;
     padding-top: 0.7rem;
 }
 
@@ -146,22 +130,6 @@ body {
 .head-callus {
     font-size: 17px;
     color: #ffb607;
-}
-.head-callus:nth-child(2) {
-    margin-left: -0.0815rem;
-}
-.head-callus:nth-child(3) {
-    margin-left: -0.04075rem;
-}
-.head-callus:nth-child(4) {
-    margin-left: -0.1304rem;
-}
-
-.head-last-section .head-nav:nth-child(2) {
-    margin-left: 2.608rem;
-}
-.head-last-section .head-nav:nth-child(3) {
-    margin-left: 2.0375rem;
 }
 
 .head-name {
@@ -183,10 +151,6 @@ body {
 }
 .head-p p {
     margin-bottom: 0;
-}
-
-.head-p p:nth-child(2) {
-    margin-top: -0.04075rem;
 }
 
 .head-nav-btns {
@@ -257,13 +221,12 @@ body {
 .head-button > * > * {
     margin-top: 1.1rem;
     margin-left: 0.3rem;
-    word-spacing: -3px;
 }
 
 .second {
-    height: 521px;
-    width: 1600px;
+    padding-bottom: 8rem;
 }
+
 .second .header {
     text-align: center;
     margin: 0;
@@ -282,6 +245,8 @@ body {
     margin: auto;
     margin-top: 3.7rem;
     width: 80%;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 .second > .service-blocks > * {
     width: 15rem;
@@ -320,7 +285,6 @@ body {
 }
 
 .about-section {
-    height: 35rem;
     background: rgba(255, 182, 7, 255);
     padding: 5rem 2rem 0;
     display: flex;
@@ -328,13 +292,12 @@ body {
 }
 
 .container {
-  height: 517px;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: 4rem;
-  align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    align-items: center;
 }
 
 .content {
@@ -392,7 +355,6 @@ body {
 }
 
 .furniture-section {
-  height: 720px;
   background-color: #f8f9fa;
   padding: 5rem 2rem;
   display: flex;
@@ -505,15 +467,13 @@ body {
 }
 
 .who-we-are-section {
-  background: linear-gradient(rgba(255, 187, 0, 0.88), rgba(255, 187, 0, 0.86)),
-    url("https://img.freepik.com/premium-photo/modern-dark-kitchen-interior-with-furniture-kitchenware-grey-black-dark-kitchen-interior-background-luxury-kitchen-generative-ai_208753-1498.jpg?w=740");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 3rem 2rem;
-  display: flex;
-  align-items: center;
-  height: 295px;
+    background: linear-gradient(rgba(255, 187, 0, 0.88), rgba(255, 187, 0, 0.86)), url(https://img.freepik.com/premium-photo/modern-dark-kitchen-interior-with-furniture-kitchenware-grey-black-dark-kitchen-interior-background-luxury-kitchen-generative-ai_208753-1498.jpg?w=740);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 3rem 2rem;
+    display: flex;
+    align-items: center;
 }
 
 .who-we-are-container {
@@ -543,7 +503,6 @@ body {
     font-size: 1.1rem;
     margin: auto;
     margin-bottom: 2rem;
-    width: 70rem;
 }
 
 .get-quote-btn {
@@ -632,11 +591,11 @@ body {
 
 
 .sixth {
-  height: 35rem;
-  width: 90rem;
-  text-align: center;
-  margin: auto;
-  padding-top: 6.6rem;
+    padding-bottom: 3rem;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    padding-top: 6.6rem;
 }
 .sixth > :nth-child(1) {
   font-size: 35px;
@@ -645,7 +604,6 @@ body {
   font-size: 17px;
 }
 .gallery {
-  height: 23rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -679,15 +637,17 @@ body {
 }
 
 .gallery-block {
-  display: flex;
-  justify-content: space-between;
-  height: 100%;
-  width: 75rem;
-  color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    height: 100%;
+    width: 75%;
+    color: white;
 }
 .gallery-element {
-  width: 32%;
-  position: relative;
+  width: 23rem;
+  height: 23rem;
   background-position: center;
 }
 .gallery-block > :nth-child(1) {
@@ -700,15 +660,13 @@ body {
   background-image: url(./assets/staircase.png);
 }
 .gallery-element > p {
-  position: absolute;
-  font-size: 20px;
-  bottom: 2.6rem;
-  left: 17%;
-  transition: 0.1s linear;
+    font-size: 20px;
+    transition: 0.1s 
+linear;
 }
 .yellow-block {
-  width: 22rem;
-  height: 20.6rem;
+  width: 90%;
+  height: 90%;
   opacity: 0;
   border-radius: 4%;
   background-color: rgba(255, 181, 7, 0.8);
