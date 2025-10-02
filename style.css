@@ -1,9 +1,6 @@
 * {
   margin: 0;
 }
-html {
-  /* font-size: clamp(16px, 2vw, 32px); */
-}
 
 @font-face {
   font-family: "Helvetica";
@@ -54,18 +51,17 @@ body {
   background-position: center 90%;
   background-color: #f3f3f3;
 }
-.head header {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  padding: 0 8%;
-  padding-top: 1.9rem;
-  padding-bottom: 1rem;
-  height: 2.6rem;
-  border-bottom: #000000 solid 1px;
-  background-color: #f3f3f3;
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0 8%;
+    padding-top: 1.9rem;
+    padding-bottom: 1rem;
+    height: 2.6rem;
+    border-bottom: #000000 solid 1px;
+    background-color: #f3f3f3;
 }
-
 .logo {
   display: flex;
   text-decoration: unset;
@@ -117,8 +113,10 @@ body {
 }
 
 .head-last-section {
-  display: flex;
-  padding-top: 0.7rem;
+    display: flex;
+    padding-top: 0.7rem;
+    width: 16%;
+    justify-content: space-between;
 }
 
 .head-last-section * {
@@ -458,10 +456,6 @@ body {
 .search-circle .material-symbols-outlined {
   font-size: 33px;
   color: #ffffff;
-}
-
-.search-circle:hover {
-  /*  */
 }
 
 .who-we-are-section {
