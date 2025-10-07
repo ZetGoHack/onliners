@@ -51,6 +51,9 @@ body {
     margin-right: auto;
     font-family: "Arial", sans-serif;
 }
+.flex {
+    display: flex;
+}
 .head {
     margin-right: auto;
     padding-bottom: 3rem;
@@ -60,7 +63,6 @@ body {
     background-color: #f3f3f3;
 }
 header {
-    display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     padding: 0 8%;
@@ -84,7 +86,6 @@ header {
     padding: 0.326rem 0 0 1.3855rem;
 }
 .head-navs {
-    display: flex;
     flex-wrap: nowrap;
     padding-top: 0.5rem;
 }
@@ -121,7 +122,6 @@ header {
 }
 
 .head-last-section {
-    display: flex;
     padding-top: 0.7rem;
     width: 16%;
     justify-content: space-between;
@@ -161,7 +161,6 @@ header {
     margin-top: 6rem;
     width: 100%;
     color: white;
-    display: flex;
     justify-content: space-between;
     overflow: hidden;
 }
@@ -292,7 +291,6 @@ header {
 .about-section {
     background: rgba(255, 182, 7, 255);
     padding: 5rem 2rem 0;
-    display: flex;
     align-items: flex-start;
 }
 
@@ -349,7 +347,6 @@ header {
 }
 
 .image-container {
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -362,7 +359,6 @@ header {
 .furniture-section {
     background-color: #f8f9fa;
     padding: 5rem 2rem;
-    display: flex;
     align-items: center;
 }
 
@@ -473,7 +469,6 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     padding: 3rem 2rem;
-    display: flex;
     align-items: center;
 }
 
@@ -663,7 +658,6 @@ header {
 }
 
 .gallery-block {
-    display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 2rem;
@@ -719,6 +713,10 @@ header {
 }
 
 .seventh {
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+    width: 60%;
+    margin: auto;
     text-align: center;
 }
 .seventh > :nth-child(1) {
@@ -730,6 +728,35 @@ header {
 .seventh .text {
     text-align: left;
     font-size: 17px;
+}
+.seventh .reviews {
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.seventh > .reviews > .flex {
+    width: 100%;
+    justify-content: space-between;
+}
+.seventh .review {
+    width: 70%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+    border: 1px solid black;
+    gap: 2rem;
+}
+.seventh .review > :nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.seventh .review .quote {
+    transform: translateY(-0.5rem);
+}
+.seventh .elipses {
+    align-items: flex-end;
 }
 
 
