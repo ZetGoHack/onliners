@@ -123,7 +123,6 @@ header {
 
 .head-last-section {
     padding-top: 0.7rem;
-    width: 16%;
     justify-content: space-between;
 }
 
@@ -582,10 +581,6 @@ header {
 
     .who-we-are-section {
         padding: 2rem 1rem;
-    }
-
-    .who-we-are-section h2 {
-        margin-bottom: 200px;
     }
 }
 
