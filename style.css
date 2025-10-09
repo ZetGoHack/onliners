@@ -287,7 +287,8 @@ header {
 
 .about-section,
 .furniture-section,
-.who-we-are-section {
+.who-we-are-section,
+.contact-us-link-section {
     line-height: 1.6;
 }
 
@@ -504,6 +505,188 @@ header {
     margin-bottom: 2rem;
 }
 
+.contact-us-link-section {
+    background: url(https://img.freepik.com/premium-photo/modern-dark-kitchen-interior-with-furniture-kitchenware-grey-black-dark-kitchen-generative-ai_208753-1498.jpg?w=740);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+.contact-us-section {
+    background: linear-gradient(rgba(255, 187, 0, 0.88), rgba(255, 187, 0, 0.86));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 3rem 2rem;
+    align-items: center;
+}
+
+.contact-us-container {
+    width: 75rem;
+    margin: 0 auto;
+    text-align: left;
+    color: white;
+}
+
+.contact-us-container h2 {
+    font-size: 1.6rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    margin-top: 16px;
+}
+
+.contact-us-container .subtitle {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+.contact-us-container p {
+    font-size: 1.1rem;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.contact-us-container input[type=text] {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+    width: 30%;
+    border-radius: 0.25rem;
+    border: none;
+    font-family: Arial;
+}
+
+.contact-us-container input[type=text]:focus {
+    outline: none;
+}
+
+.contact-us-container input[type=email] {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+    width: 30%;
+    border-radius: 0.25rem;
+    border: none;
+    font-family: Arial;
+}
+
+.contact-us-container input[type=email]:focus {
+    outline: none;
+}
+
+.contact-us-container input[type=tel] {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+    width: 30%;
+    border-radius: 0.25rem;
+    border: none;
+    font-family: Arial;
+}
+
+.contact-us-container input[type=tel]:focus {
+    outline: none;
+}
+
+.contact-us-container input[type=submit] {
+    background-color: transparent;
+    border: solid 2px white;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 800;
+    padding: 12px 24px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.contact-us-container textarea {
+    padding: 0.6rem;
+    font-size: 0.85rem;
+    width: 30%;
+    border-radius: 0.25rem;
+    border: none;
+    resize: none;
+    font-family: Arial;
+}
+
+.contact-us-container textarea:focus {
+    outline: none;
+}
+
+.link-section {
+    background: linear-gradient(rgba(60, 60, 60, 0.9), rgba(60, 60, 60, 0.9));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 3rem 2rem;
+    align-items: center;
+}
+
+.link-container h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+    margin-top: 16px;
+}
+
+.link-container p {
+    font-size: 1rem;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.subscribe {
+    width: 40%;
+    border-bottom: solid 2px white;
+}
+
+.link-section input[type=email] {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.link-section input[type=email]::placeholder {
+    color: rgb(120, 120, 120);
+    font-family: Arial;
+}
+
+.link-section input[type=email]:focus {
+    outline: none;
+}
+
+.lets-design h2 {
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+.lets-design {
+    color: white;
+    width: 25%;
+    margin: 0 2.85rem;
+}
+
+.let-us-help {
+    color: white;
+    width: 25%;
+    margin: 0 2.85rem;
+}
+
+.information {
+    color: white;
+    width: 25%;
+    margin: 0 2.85rem;
+}
+
+.our-design {
+    color: white;
+    width: 25%;
+    margin: 0 2.85rem;
+}
+
 .get-quote-btn {
     background-color: #fff;
     color: rgb(0, 0, 0);
@@ -586,6 +769,14 @@ header {
     .who-we-are-section {
         padding: 2rem 1rem;
     }
+
+    .contact-us-container h2 {
+        font-size: 2rem;
+    }
+
+    .contact-us-section {
+        padding: 2rem 1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -606,6 +797,14 @@ header {
     }
 
     .who-we-are-container p {
+        font-size: 0.9rem;
+    }
+
+    .contact-us-container h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-us-container p {
         font-size: 0.9rem;
     }
 }
