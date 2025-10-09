@@ -12,19 +12,19 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" />
 </head>
 <body>
-    <header style="position: fixed; width: 84%;">
+    <header class="flex">
             <a class="logo" href="/">
-                <img class="logo" src="../assets/logo.png">
+                <img class="logo" src="/assets/logo.png">
                 <p class="logo-text poppins-bold">BUILT&nbsp;BETTER</p>
             </a>
-            <div class="head-navs">
+            <div class="head-navs flex">
                 <a href="/"><button class="page head-nav poppins-regular">
                     HOME
                 </button></a>
-                <a href="/services"><button class="on-page page head-nav poppins-regular">
+                <a href="/services"><button class="page head-nav poppins-regular">
                     SERVICES
                 </button></a>
-                <a href="/about"><button class="page head-nav poppins-regular">
+                <a href="/about"><button class="on-page page head-nav poppins-regular">
                     ABOUT
                 </button></a>
                 <a href="/shop"><button class="page head-nav poppins-regular">
@@ -34,7 +34,7 @@
                     CONTCT
                 </button></a>
             </div>
-            <div class="head-last-section">
+            <div class="head-last-section flex">
                 <div>
                     <p class="head-callus poppins-regular">
                         CALL&nbsp;US:&nbsp;+01&nbsp;1234567890</p>
@@ -44,7 +44,12 @@
                     LOGIN
                 </button>
             </div>
-    </header>
+            <div class="burger-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black4">
+                    <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </header>
     <section style="height: 200vh; background-color: #e0e0e0; padding-top: 8.2rem;">
         <div class="" style="display: flex; margin: auto; width: 60%;">
             <div>
