@@ -505,188 +505,6 @@ header {
     margin-bottom: 2rem;
 }
 
-.contact-us-link-section {
-    background: url(https://img.freepik.com/premium-photo/modern-dark-kitchen-interior-with-furniture-kitchenware-grey-black-dark-kitchen-generative-ai_208753-1498.jpg?w=740);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    align-items: center;
-}
-
-.contact-us-section {
-    background: linear-gradient(rgba(255, 187, 0, 0.88), rgba(255, 187, 0, 0.86));
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 3rem 2rem;
-    align-items: center;
-}
-
-.contact-us-container {
-    width: 75rem;
-    margin: 0 auto;
-    text-align: left;
-    color: white;
-}
-
-.contact-us-container h2 {
-    font-size: 1.6rem;
-    font-weight: normal;
-    margin-bottom: 1rem;
-    letter-spacing: 2px;
-    margin-top: 16px;
-}
-
-.contact-us-container .subtitle {
-    font-size: 1.1rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-    letter-spacing: 1px;
-    opacity: 0.9;
-}
-
-.contact-us-container p {
-    font-size: 1.1rem;
-    margin: auto;
-    margin-bottom: 2rem;
-}
-
-.contact-us-container input[type=text] {
-    padding: 0.6rem;
-    font-size: 0.85rem;
-    width: 30%;
-    border-radius: 0.25rem;
-    border: none;
-    font-family: Arial;
-}
-
-.contact-us-container input[type=text]:focus {
-    outline: none;
-}
-
-.contact-us-container input[type=email] {
-    padding: 0.6rem;
-    font-size: 0.85rem;
-    width: 30%;
-    border-radius: 0.25rem;
-    border: none;
-    font-family: Arial;
-}
-
-.contact-us-container input[type=email]:focus {
-    outline: none;
-}
-
-.contact-us-container input[type=tel] {
-    padding: 0.6rem;
-    font-size: 0.85rem;
-    width: 30%;
-    border-radius: 0.25rem;
-    border: none;
-    font-family: Arial;
-}
-
-.contact-us-container input[type=tel]:focus {
-    outline: none;
-}
-
-.contact-us-container input[type=submit] {
-    background-color: transparent;
-    border: solid 2px white;
-    color: white;
-    font-size: 0.9rem;
-    font-weight: 800;
-    padding: 12px 24px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-
-.contact-us-container textarea {
-    padding: 0.6rem;
-    font-size: 0.85rem;
-    width: 30%;
-    border-radius: 0.25rem;
-    border: none;
-    resize: none;
-    font-family: Arial;
-}
-
-.contact-us-container textarea:focus {
-    outline: none;
-}
-
-.link-section {
-    background: linear-gradient(rgba(60, 60, 60, 0.9), rgba(60, 60, 60, 0.9));
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 3rem 2rem;
-    align-items: center;
-}
-
-.link-container h2 {
-    font-size: 1.5rem;
-    font-weight: normal;
-    margin-bottom: 1rem;
-    margin-top: 16px;
-}
-
-.link-container p {
-    font-size: 1rem;
-    margin: auto;
-    margin-bottom: 2rem;
-}
-
-.subscribe {
-    width: 40%;
-    border-bottom: solid 2px white;
-}
-
-.link-section input[type=email] {
-    background-color: transparent;
-    border: none;
-    color: white;
-}
-
-.link-section input[type=email]::placeholder {
-    color: rgb(120, 120, 120);
-    font-family: Arial;
-}
-
-.link-section input[type=email]:focus {
-    outline: none;
-}
-
-.lets-design h2 {
-    font-weight: 800;
-    font-size: 1.8rem;
-}
-
-.lets-design {
-    color: white;
-    width: 25%;
-    margin: 0 2.85rem;
-}
-
-.let-us-help {
-    color: white;
-    width: 25%;
-    margin: 0 2.85rem;
-}
-
-.information {
-    color: white;
-    width: 25%;
-    margin: 0 2.85rem;
-}
-
-.our-design {
-    color: white;
-    width: 25%;
-    margin: 0 2.85rem;
-}
-
 .get-quote-btn {
     background-color: #fff;
     color: rgb(0, 0, 0);
@@ -950,6 +768,9 @@ header {
     flex-direction: column;
     align-items: center;
 }
+.seventh .review > :nth-child(1) > img:nth-child(1) {
+    width: 100%;
+}
 .seventh .review .quote {
     transform: translateY(-0.5rem);
 }
@@ -957,6 +778,183 @@ header {
     align-items: flex-end;
 }
 
+.contact-us-link-section {
+    background: url(https://img.freepik.com/premium-photo/modern-dark-kitchen-interior-with-furniture-kitchenware-grey-black-dark-kitchen-generative-ai_208753-1498.jpg?w=740);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+.contact-us-section {
+    background: linear-gradient(rgba(255, 187, 0, 0.88), rgba(255, 187, 0, 0.86));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 3rem 10rem;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+.contact-us-container {
+    width: 100%;
+    text-align: left;
+    color: white;
+}
+.contact-us-section > img{
+    width: 50%;
+}
+
+.contact-us-container h2 {
+    font-size: 1.6rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    margin-top: 16px;
+}
+
+.contact-us-container .subtitle {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+.contact-us-container p {
+    font-size: 1.1rem;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.contact-us-container input, .contact-us-container textarea {
+    box-sizing: border-box;
+    padding: 0.6rem;
+    font-size: 0.85rem;
+    width: 100%;
+    border-radius: 0.25rem;
+    border: none;
+    font-family: Arial;
+}
+
+.contact-us-container input:focus, .contact-us-container textarea:focus {
+    outline: none;
+}
+
+.contact-us-container input[type=submit] {
+    background-color: transparent;
+    border: solid 2px white;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 800;
+    padding: 12px 24px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.contact-us-container textarea {
+    resize: none;
+}
+
+.link-section {
+    background: linear-gradient(rgba(60, 60, 60, 0.9), rgba(60, 60, 60, 0.9));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 3rem 2rem;
+    align-items: center;
+}
+
+.link-container {
+    justify-content: space-around;
+}
+.link-container * {
+    transition: 0.1s linear;
+}
+
+.link-container h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+    margin-top: 16px;
+}
+
+.link-container p {
+    font-size: 1rem;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+.link-container a:link, .link-container a:visited {
+    color: white;
+    text-decoration: unset;
+}
+.link-container a:hover {
+    color: #ffb507;
+}
+.link-container a:active {
+    color: #ffb50773;
+}
+.subscribe-helper {
+    justify-content: end;
+}
+.subscribe {
+    width: 40%;
+    border-bottom: solid 2px white;
+    justify-content: space-between;
+    align-items: center;
+}
+.subscribe :nth-child(1) {
+    width: 100%;
+}
+.subscribe :nth-child(2) {
+    background-color: unset;
+    border: unset;
+    color: white;
+    font-size: 16px;
+    text-align: end;
+}
+
+.link-section input[type=email] {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.link-section input[type=email]::placeholder {
+    color: rgb(120, 120, 120);
+    font-family: Arial;
+}
+
+.link-section input[type=email]:focus {
+    outline: none;
+}
+
+.lets-design h2 {
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+.lets-design, .our-design, .let-us-help, .information {
+    color: white;
+    width: 25%;
+    margin: 0 2.85rem;
+}
+
+.footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 17px;
+    text-align: center;
+}
+.socials {
+    margin: auto;
+    width: 10rem;
+    height: 2rem;
+    justify-content: space-between;
+    gap: 1rem;
+}
 
 /* Services page specific styles */
 .services-hero {
@@ -1108,7 +1106,38 @@ header {
 }
 
 /* phone: 640px-1025px, tablet:  px-px, pc: px*/
+@media (max-width: 1100px) {
+    .elipses :nth-child(1) {
+        width: 0;
+    }
+
+    .head-navs, .head-last-section {
+        display: none;
+    }
+    .burger-menu {
+        display: block;
+    }
+}
+
 @media (max-width: 768px) {
+    .head-name {
+        font-size: 45px;
+    }
+    .our-design, .let-us-help {
+        display: none;
+    }
+    .contact-us-section {
+        padding: 3rem 2rem;
+    }
+    .contact-us-section > img{
+        display: none;
+    }
+    .link-container h2 {
+        font-size: 1rem;
+    }
+    .subscribe {
+        width: 80%;
+    }
     .services-hero h1 {
         font-size: 2.5rem;
     }
@@ -1132,20 +1161,5 @@ header {
     .service-image,
     .service-detail-image {
         height: 300px;
-    }
-}
-
-@media (max-width: 1100px) {
-    .head-navs, .head-last-section {
-        display: none;
-    }
-    .burger-menu {
-        display: block;
-    }
-}
-
-@media (max-width: 630px) {
-    .elipses :nth-child(1) {
-        width: 0;
     }
 }
