@@ -294,7 +294,7 @@ header {
 
 .about-section {
     background: rgba(255, 182, 7, 255);
-    padding: 5rem 2rem 0;
+    padding: 9rem 2rem 9rem;
     align-items: flex-start;
 }
 
@@ -938,7 +938,6 @@ header {
 
 .lets-design, .our-design, .let-us-help, .information {
     color: white;
-    width: 25%;
     margin: 0 2.85rem;
 }
 
